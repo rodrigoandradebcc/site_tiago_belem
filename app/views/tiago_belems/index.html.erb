@@ -1,0 +1,23 @@
+<h1>Listing tiago_belems</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tiago_belems.each do |tiago_belem| %>
+  <tr>
+    <td><%= tiago_belem.content %></td>
+    <td><%= link_to 'Show', tiago_belem %></td>
+    <td><%= link_to 'Edit', edit_tiago_belem_path(tiago_belem) %></td>
+    <td><%= link_to 'Destroy', tiago_belem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tiago belem', new_tiago_belem_path %>
