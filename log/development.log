@@ -1,3 +1,678 @@
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (160.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (199.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (18.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateSchedules (20130527165154)
+  [1m[35m (70.2ms)[0m  CREATE TABLE `schedules` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `month` varchar(255), `specification` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (32.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165154')[0m
+Migrating to CreateAlbums (20130527165213)
+  [1m[35m (73.7ms)[0m  CREATE TABLE `albums` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (32.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165213')[0m
+Migrating to CreateTiagoBelems (20130527165232)
+  [1m[35m (73.9ms)[0m  CREATE TABLE `tiago_belems` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (33.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165232')[0m
+Migrating to AddAttachmentAvatarToAlbums (20130528114440)
+  [1m[35m (192.0ms)[0m  ALTER TABLE `albums` ADD `avatar_file_name` varchar(255)
+  [1m[36m (159.2ms)[0m  [1mALTER TABLE `albums` ADD `avatar_content_type` varchar(255)[0m
+  [1m[35m (142.6ms)[0m  ALTER TABLE `albums` ADD `avatar_file_size` int(11)
+  [1m[36m (151.0ms)[0m  [1mALTER TABLE `albums` ADD `avatar_updated_at` datetime[0m
+  [1m[35m (32.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130528114440')
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/albums" for 127.0.0.1 at 2013-05-28 08:56:51 -0300
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT `albums`.* FROM `albums` [0m
+  Rendered albums/index.html.erb within layouts/application (2.8ms)
+Compiled albums.css  (41ms)  (pid 4367)
+Compiled scaffolds.css  (10ms)  (pid 4367)
+Compiled application.css  (68ms)  (pid 4367)
+Compiled jquery.js  (1ms)  (pid 4367)
+Compiled jquery_ujs.js  (0ms)  (pid 4367)
+Compiled albums.js  (330ms)  (pid 4367)
+Compiled schedules.js  (121ms)  (pid 4367)
+Compiled tiago_belems.js  (122ms)  (pid 4367)
+Compiled application.js  (663ms)  (pid 4367)
+Completed 200 OK in 891ms (Views: 847.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /albums.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /tiago_belems.js - 200 OK (4ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /schedules.js - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /albums.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 08:56:52 -0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2013-05-28 08:56:54 -0300
+Processing by AlbumsController#new as HTML
+ERROR: compiling _app_views_albums__form_html_erb___996096532__632690148 RAISED /home/rodrigo/site_tiago_belem/app/views/albums/_form.html.erb:1: syntax error, unexpected tASSOC, expecting keyword_end
+...end=  form_for(@album), :url => albums_path, :html => {:mult...
+...                               ^
+/home/rodrigo/site_tiago_belem/app/views/albums/_form.html.erb:1: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+..., :url => albums_path, :html => {:multipart => true} do |f| ...
+...                               ^
+/home/rodrigo/site_tiago_belem/app/views/albums/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| @output_buffer.safe_conc...
+...                               ^
+/home/rodrigo/site_tiago_belem/app/views/albums/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_albums__form_html_erb___996096532__632690148(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "albums/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@album), :url => albums_path, :html => {:multipart => true} do |f| @output_buffer.safe_concat('
+');   if @album.errors.any? 
+@output_buffer.safe_concat('    <div id="error_explanation">
+      <h2>');@output_buffer.append= ( pluralize(@album.errors.count, "error") );@output_buffer.safe_concat(' prohibited this album from being saved:</h2>
+
+      <ul>
+');       @album.errors.full_messages.each do |msg| 
+@output_buffer.safe_concat('        <li>');@output_buffer.append= ( msg );@output_buffer.safe_concat('</li>
+');       end 
+@output_buffer.safe_concat('      </ul>
+    </div>
+');   end 
+@output_buffer.safe_concat('
+  <div class="field">
+    ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :description );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_area :description );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :imagem );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( f.file_field :avatar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+
+  <div class="actions">
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/rodrigo/site_tiago_belem/app/views/albums/new.html.erb:3:in `_app_views_albums_new_html_erb___896027849__628260148'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/template.rb:145:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/rodrigo/site_tiago_belem/app/controllers/albums_controller.rb:29:in `new'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__588272362__process_action__153260455__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__143131269__call__832303035__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered albums/_form.html.erb (27.4ms)
+  Rendered albums/new.html.erb within layouts/application (43.6ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (/home/rodrigo/site_tiago_belem/app/views/albums/_form.html.erb:1: syntax error, unexpected tASSOC, expecting keyword_end
+...end=  form_for(@album), :url => albums_path, :html => {:mult...
+...                               ^
+/home/rodrigo/site_tiago_belem/app/views/albums/_form.html.erb:1: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+..., :url => albums_path, :html => {:multipart => true} do |f| ...
+...                               ^
+/home/rodrigo/site_tiago_belem/app/views/albums/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| @output_buffer.safe_conc...
+...                               ^
+/home/rodrigo/site_tiago_belem/app/views/albums/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting $end):
+    1: <%= form_for(@album), :url => albums_path, :html => {:multipart => true} do |f| %>
+    2:   <% if @album.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@album.errors.count, "error") %> prohibited this album from being saved:</h2>
+  app/views/albums/new.html.erb:3:in `_app_views_albums_new_html_erb___896027849__628260148'
+  app/controllers/albums_controller.rb:29:in `new'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Processing by AlbumsController#new as HTML
+  Rendered albums/_form.html.erb (46.5ms)
+  Rendered albums/new.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 69ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /schedules.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /tiago_belems.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 08:57:34 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2013-05-28 08:58:58 -0300
+Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KHFablIDS+aNOecmxC829GEZF2CYPxih90gTNMj9cSE=", "album"=>{"name"=>"oi", "description"=>"saassa", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x9359a7c @original_filename="googleimages.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"album[avatar]\"; filename=\"googleimages.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20130528-4367-1gqb6t2>>}, "commit"=>"Create Album"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: avatar):
+  app/controllers/albums_controller.rb:43:in `new'
+  app/controllers/albums_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+Connecting to database specified by database.yml
+  [1m[36m (90.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (142.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (18.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateSchedules (20130527165154)
+  [1m[35m (53.5ms)[0m  CREATE TABLE `schedules` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `month` varchar(255), `specification` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (32.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165154')[0m
+Migrating to CreateAlbums (20130527165213)
+  [1m[35m (57.4ms)[0m  CREATE TABLE `albums` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (24.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165213')[0m
+Migrating to CreateTiagoBelems (20130527165232)
+  [1m[35m (73.9ms)[0m  CREATE TABLE `tiago_belems` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (32.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165232')[0m
+Migrating to AddAttachmentAvatarToAlbums (20130528114440)
+  [1m[35m (167.0ms)[0m  ALTER TABLE `albums` ADD `avatar_file_name` varchar(255)
+  [1m[36m (201.1ms)[0m  [1mALTER TABLE `albums` ADD `avatar_content_type` varchar(255)[0m
+  [1m[35m (167.6ms)[0m  ALTER TABLE `albums` ADD `avatar_file_size` int(11)
+  [1m[36m (143.9ms)[0m  [1mALTER TABLE `albums` ADD `avatar_updated_at` datetime[0m
+  [1m[35m (24.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130528114440')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/albums" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.1ms)[0m  [1mSELECT `albums`.* FROM `albums` [0m
+  Rendered albums/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 117ms (Views: 79.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /albums.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /albums.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /schedules.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /tiago_belems.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:37 -0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/albums/new" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Processing by AlbumsController#new as HTML
+  Rendered albums/_form.html.erb (7.4ms)
+  Rendered albums/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 66ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /tiago_belems.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /schedules.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:38 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/albums" for 127.0.0.1 at 2013-05-28 09:02:44 -0300
+Processing by AlbumsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KHFablIDS+aNOecmxC829GEZF2CYPxih90gTNMj9cSE=", "album"=>{"name"=>"sasa", "description"=>"sasa", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb5b4d31c @original_filename="googleimages.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"album[avatar]\"; filename=\"googleimages.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20130528-4524-phz7ok>>}, "commit"=>"Create Album"}
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]'
+Command :: identify -format %m '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]'
+Command :: identify -format %m '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]'
+Command :: identify -format %m '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]'
+Command :: convert '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]' -auto-orient -resize "300x300>" '/tmp/googleimages20130528-4524-1mtoaz820130528-4524-1d1lnr1'
+Command :: file -b --mime '/tmp/googleimages20130528-4524-1mtoaz820130528-4524-1d1lnr1'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]'
+Command :: identify -format %m '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]'
+Command :: identify -format %m '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]'
+Command :: identify -format %m '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]'
+Command :: convert '/tmp/googleimages20130528-4524-1mtoaz8.jpg[0]' -auto-orient -resize "100x100>" '/tmp/googleimages20130528-4524-1mtoaz820130528-4524-1eif0h0'
+Command :: file -b --mime '/tmp/googleimages20130528-4524-1mtoaz820130528-4524-1eif0h0'
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (29.5ms)[0m  [1mINSERT INTO `albums` (`avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `avatar_updated_at`, `created_at`, `description`, `name`, `updated_at`) VALUES ('image/jpeg', 'googleimages.jpg', 20290, '2013-05-28 12:02:44', '2013-05-28 12:02:45', 'sasa', 'sasa', '2013-05-28 12:02:45')[0m
+[paperclip] Saving attachments.
+  [1m[35m (32.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/albums/1
+Completed 302 Found in 549ms (ActiveRecord: 62.0ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (15.0ms)[0m  [1mSELECT `albums`.* FROM `albums` WHERE `albums`.`id` = 1 LIMIT 1[0m
+  Rendered albums/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 23.6ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /albums.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /schedules.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /tiago_belems.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:45 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.2ms)[0m  SELECT `albums`.* FROM `albums` 
+  Rendered albums/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /tiago_belems.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /schedules.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 09:02:49 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1mSELECT `albums`.* FROM `albums` [0m
+  Rendered albums/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /schedules.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /tiago_belems.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 09:03:41 -0300
+Served asset /application.js - 304 Not Modified (30ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT `albums`.* FROM `albums` 
+  Rendered albums/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /schedules.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /tiago_belems.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 09:06:30 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.2ms)[0m  [1mSELECT `albums`.* FROM `albums` [0m
+  Rendered albums/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /schedules.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /tiago_belems.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 09:07:08 -0300
+Served asset /application.js - 304 Not Modified (1ms)

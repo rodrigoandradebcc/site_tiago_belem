@@ -4,7 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Description</th>
-    <th></th>
+    <th>Imagem</th>
     <th></th>
     <th></th>
   </tr>
@@ -13,6 +13,7 @@
   <tr>
     <td><%= album.name %></td>
     <td><%= album.description %></td>
+    <td><%= image_tag album.avatar.url(:thumb) %></td>
     <td><%= link_to 'Show', album %></td>
     <td><%= link_to 'Edit', edit_album_path(album) %></td>
     <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>

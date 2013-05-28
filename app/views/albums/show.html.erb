@@ -10,6 +10,9 @@
   <%= @album.description %>
 </p>
 
-
+<p>
+	<b>Imagem:</b>
+	<%= image_tag @album.avatar.url(:medium) %>
+</p>
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
