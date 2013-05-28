@@ -1,0 +1,22 @@
+<h1>Listing endorsees</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @endorsees.each do |endorsee| %>
+  <tr>
+    <td><%= image_tag endorsee.image.url(:thumb) %></td>
+    <td><%= link_to 'Show', endorsee %></td>
+    <td><%= link_to 'Edit', edit_endorsee_path(endorsee) %></td>
+    <td><%= link_to 'Destroy', endorsee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Endorsee', new_endorsee_path %>

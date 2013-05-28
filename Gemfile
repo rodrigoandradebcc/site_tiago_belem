@@ -7,6 +7,8 @@ gem 'rails', '3.2.13'
 
 gem 'mysql2'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,7 +21,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'therubyracer'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
