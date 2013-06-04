@@ -1,6 +1,9 @@
 class AlbumsController < ApplicationController
   # GET /albums
   # GET /albums.json
+
+   load_and_authorize_resource
+
   def index
     @albums = Album.all
 

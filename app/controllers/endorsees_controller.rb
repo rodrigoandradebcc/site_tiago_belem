@@ -1,6 +1,7 @@
 class EndorseesController < ApplicationController
   # GET /endorsees
   # GET /endorsees.json
+   load_and_authorize_resource
   def index
     @endorsees = Endorsee.all
 

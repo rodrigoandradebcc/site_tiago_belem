@@ -11278,3 +11278,31 @@ Served asset /tiago_belems.js - 304 Not Modified (0ms)
 
 Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-06-04 19:02:23 -0300
 Served asset /schedules.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateSchedules (20130527165154)
+Migrating to CreateAlbums (20130527165213)
+Migrating to CreateTiagoBelems (20130527165232)
+Migrating to AddAttachmentAvatarToAlbums (20130528114440)
+Migrating to CreateEndorsees (20130528142005)
+Migrating to AddAttachmentImageToEndorsees (20130528142309)
+Migrating to DeviseCreateUsers (20130604215733)
+Migrating to CreateRoles (20130604220458)
+  [1m[35m (84.5ms)[0m  CREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (39.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130604220458')[0m
+Migrating to UsersHaveAndBelongtoManyRoles (20130604220548)
+  [1m[35m (57.1ms)[0m  CREATE TABLE `roles_users` (`role_id` int(11), `user_id` int(11)) ENGINE=InnoDB
+  [1m[36m (32.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130604220548')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (12.2ms)[0m  [1mINSERT INTO `roles` (`created_at`, `name`, `updated_at`) VALUES ('2013-06-04 22:14:45', 'admin', '2013-06-04 22:14:45')[0m
+  [1m[35m (23.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `roles` (`created_at`, `name`, `updated_at`) VALUES ('2013-06-04 22:14:45', 'visitante', '2013-06-04 22:14:45')
+  [1m[36m (14.1ms)[0m  [1mCOMMIT[0m

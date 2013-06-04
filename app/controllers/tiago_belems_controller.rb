@@ -1,6 +1,7 @@
 class TiagoBelemsController < ApplicationController
   # GET /tiago_belems
   # GET /tiago_belems.json
+   load_and_authorize_resource
   def index
     @tiago_belems = TiagoBelem.all
 
