@@ -9,6 +9,8 @@ gem 'mysql2'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
+gem 'devise'
+gem 'cancan'
 
 # Gems used only for assets and not required
 # in production environments by default.
