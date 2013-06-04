@@ -1,21 +1,14 @@
-<%= form_for(@tiago_belem) do |f| %>
-  <% if @tiago_belem.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@tiago_belem.errors.count, "error") %> prohibited this tiago_belem from being saved:</h2>
-
-      <ul>
-      <% @tiago_belem.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for @tiago_belem, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :content, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :content, :class => 'text_area' %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                tiago_belems_path, :class => 'btn' %>
   </div>
 <% end %>

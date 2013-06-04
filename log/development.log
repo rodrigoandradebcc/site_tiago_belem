@@ -3195,3 +3195,36 @@ Served asset /application.js - 304 Not Modified (3ms)
 
 Started GET "/assets/tiago_belems.js?body=1" for 127.0.0.1 at 2013-05-28 12:56:04 -0300
 Served asset /tiago_belems.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (93.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (200.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (1.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateSchedules (20130527165154)
+  [1m[35m (63.4ms)[0m  CREATE TABLE `schedules` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `month` varchar(255), `specification` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (24.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165154')[0m
+Migrating to CreateAlbums (20130527165213)
+  [1m[35m (57.4ms)[0m  CREATE TABLE `albums` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (24.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165213')[0m
+Migrating to CreateTiagoBelems (20130527165232)
+  [1m[35m (65.8ms)[0m  CREATE TABLE `tiago_belems` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (24.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130527165232')[0m
+Migrating to AddAttachmentAvatarToAlbums (20130528114440)
+  [1m[35m (133.5ms)[0m  ALTER TABLE `albums` ADD `avatar_file_name` varchar(255)
+  [1m[36m (134.2ms)[0m  [1mALTER TABLE `albums` ADD `avatar_content_type` varchar(255)[0m
+  [1m[35m (134.2ms)[0m  ALTER TABLE `albums` ADD `avatar_file_size` int(11)
+  [1m[36m (134.3ms)[0m  [1mALTER TABLE `albums` ADD `avatar_updated_at` datetime[0m
+  [1m[35m (24.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130528114440')
+Migrating to CreateEndorsees (20130528142005)
+  [1m[36m (57.6ms)[0m  [1mCREATE TABLE `endorsees` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (24.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130528142005')
+Migrating to AddAttachmentImageToEndorsees (20130528142309)
+  [1m[36m (150.2ms)[0m  [1mALTER TABLE `endorsees` ADD `image_file_name` varchar(255)[0m
+  [1m[35m (143.7ms)[0m  ALTER TABLE `endorsees` ADD `image_content_type` varchar(255)
+  [1m[36m (134.2ms)[0m  [1mALTER TABLE `endorsees` ADD `image_file_size` int(11)[0m
+  [1m[35m (134.2ms)[0m  ALTER TABLE `endorsees` ADD `image_updated_at` datetime
+  [1m[36m (24.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130528142309')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

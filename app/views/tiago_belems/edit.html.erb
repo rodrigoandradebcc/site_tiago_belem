@@ -1,6 +1,5 @@
-<h1>Editing tiago_belem</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @tiago_belem %> |
-<%= link_to 'Back', tiago_belems_path %>
+<%- model_class = TiagoBelem -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human %></h1>
+</div>
+<%= render :partial => 'form' %>

@@ -1,23 +1,36 @@
-<h1>Listing tiago_belems</h1>
-<img src="/assets/tiago.jpg">
-<table>
-  <tr>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @tiago_belems.each do |tiago_belem| %>
-  <tr>
-    <td><%= tiago_belem.content %></td>
-    <td><%= link_to 'Show', tiago_belem %></td>
-    <td><%= link_to 'Edit', edit_tiago_belem_path(tiago_belem) %></td>
-    <td><%= link_to 'Destroy', tiago_belem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+<%- model_class = TiagoBelem -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:content) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tiago_belems.each do |tiago_belem| %>
+      <tr>
+        <td><%= link_to tiago_belem.id, tiago_belem_path(tiago_belem) %></td>
+        <td><%= tiago_belem.content %></td>
+        <td><%=l tiago_belem.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_tiago_belem_path(tiago_belem), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      tiago_belem_path(tiago_belem),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Tiago belem', new_tiago_belem_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_tiago_belem_path,
+            :class => 'btn btn-primary' %>
