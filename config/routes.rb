@@ -1,4 +1,21 @@
 SiteTiagoBelem::Application.routes.draw do
+  
+
+  resources :bios
+
+
+  devise_for :users
+
+  resources :endorsees
+
+  resources :tiago_belems
+
+  resources :schedules
+
+  resources :albums
+
+  root :to => 'home#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
