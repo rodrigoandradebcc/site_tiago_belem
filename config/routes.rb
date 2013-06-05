@@ -1,4 +1,7 @@
 SiteTiagoBelem::Application.routes.draw do
+  resources :bios
+
+
   devise_for :users
 
   resources :endorsees
