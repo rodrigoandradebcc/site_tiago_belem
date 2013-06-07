@@ -32,7 +32,7 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body background = "assets/drumer2.png">
+<body background = "assets/d.jpg" background-repeat: no-repeat background-attachment: fixed>
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
@@ -42,10 +42,10 @@
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
 	</button>
-	<a class="brand" href="#">Tiago Belém</a>
+	<a class= "brand" href="#" ><%= image_tag 'nome.png', height: 80, width: 100 %></a>
 	<div class="nav-collapse collapse">
 	<ul class="nav">
-	<li class="active"><a href="#">Home</a></li>
+	<li class="active"><a href="/home/index">Home</a></li>
 	<li><a href="#about">About</a></li>
 	<li><a href="#contact">Contact</a></li>
 	<li class="dropdown">
@@ -73,39 +73,7 @@
 	
 	<div class="container">
 	
-	<!-- Main hero unit for a primary marketing message or call to action -->
-	<div class="hero-unit">
-	<h1>Tiago Belém</h1>
-<!-- 	<img src="/assets/tiago.jpg"> -->
-	<p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-	</div>
-	
-	<!-- Example row of columns -->
-	<div class="row row-padded">
-	<div class="span4">
-	<h2>Heading</h2>
-	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	<p><a class="btn" href="#">View details &raquo;</a></p>
-	</div>
-	<div class="span4">
-	<h2>Heading</h2>
-	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	<p><a class="btn" href="#">View details &raquo;</a></p>
-	</div>
-	<div class="span4">
-	<h2>Heading</h2>
-	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	<p><a class="btn" href="#">View details &raquo;</a></p>
-	</div>
-	</div>
-	
-	<hr>
-	
-	<footer>
-	<p>&copy; Company 2013</p>
-	</footer>
-	
-	</div> <!-- /container -->
+	 <!-- /container -->
 	
 	<!-- Le javascript
 	================================================== -->
@@ -124,8 +92,12 @@
 	<script src="../assets/js/bootstrap-carousel.js"></script>
 	<script src="../assets/js/bootstrap-typeahead.js"></script>
 	
-	</body>
+</body>
 <%= yield %>
 
 </body>
+	<hr>
+	<footer>
+	<p>&copy; Company 2013</p>
+	</footer>
 </html>
