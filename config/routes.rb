@@ -1,10 +1,13 @@
 SiteTiagoBelem::Application.routes.draw do
+  resources :tiago_endorsees
+
+
+  get "endorsees/index"
+
   get "home/index"
 
   resources :bios
 
-
-  get "endorsees/index"
 
   resources :schedules
 

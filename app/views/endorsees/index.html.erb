@@ -1,2 +1,12 @@
 <h1>Endorsees#index</h1>
-<p>Find me in app/views/endorsees/index.html.erb</p>
+<table>
+  <tr>
+    <th>Link</th>
+  </tr>
+
+<% @tiago_endorsees.each do |tiago_endorsee| %>
+  <tr>
+    <td> <a href="<%= tiago_endorsee.link %>"><%= tiago_endorsee.link %></a> </td>
+  </tr>
+<% end %>
+</table>
