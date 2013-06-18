@@ -1,4 +1,7 @@
 SiteTiagoBelem::Application.routes.draw do
+  resources :movies
+
+
   resources :tiago_endorsees
 
 
