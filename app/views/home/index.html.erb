@@ -2,15 +2,38 @@
 	.centro {
 		text-align: center;
 	}
+	.descer{
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
 	</style>
-<!-- Main hero unit for a primary marketing message or call to action -->
-	<div class="hero-unit row-padded">
-	<h1>Tiago Belém</h1>
-<!-- 	<img src="/assets/tiago.jpg"> -->
-	<p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-	</div>
 	
-	<div class="container marketing">
+	
+
+	<!---->
+	<div class="container">	
+		<div class="row">
+
+			<div class="span6">
+				<img src="../assets/t.jpg" class="img-polaroid" alt="Slider" />
+			</div>
+			<div class="span6">
+				<img src="../assets/t2.jpg" class="img-polaroid" alt="Slider" />
+			</div>
+			<div class="span6">
+				<img src="../assets/t3.jpg" class="img-polaroid" alt="Slider" />
+			</div>
+			<div class="span6">
+				<img src="../assets/t4.jpg" class="img-polaroid" alt="Slider" />
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Example row of columns -->
+
+
+	<div class="container marketing descer">
 		<!--Três colunas abaixo do carousel-->
 		<div class="row">
 			<div class="span4 centro">
@@ -33,12 +56,10 @@
 			</div>
 		</div>
 	</div>
-	
-	<!-- Example row of columns -->
 
-<button class="btn"><%= link_to 'Bio', :controller => :bios, :action => :index%></br>
-</button>
-<button class="btn"><%= link_to 'Agenda', :controller => :schedules, :action => :index %></br>
-</button>
-<button class="btn"><%= link_to 'Endorsee', :controller => :endorsees, :action => :index %>
-</button>
+	<button class="btn"><%= link_to 'Bio', :controller => :bios, :action => :index%></br>
+	</button>
+	<button class="btn"><%= link_to 'Agenda', :controller => :schedules, :action => :index %></br>
+	</button>
+	<button class="btn"><%= link_to 'Endorsee', :controller => :endorsees, :action => :index %>
+	</button>
