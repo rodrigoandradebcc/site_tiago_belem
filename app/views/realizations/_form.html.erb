@@ -1,0 +1,21 @@
+<%= form_for(@realization) do |f| %>
+  <% if @realization.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@realization.errors.count, "error") %> prohibited this realization from being saved:</h2>
+
+      <ul>
+      <% @realization.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

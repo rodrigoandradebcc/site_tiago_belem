@@ -1,0 +1,23 @@
+<h1>Listing realizations</h1>
+
+<table>
+  <tr>
+    <th>Link</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @realizations.each do |realization| %>
+  <tr>
+    <td><%= realization.link %></td>
+    <td><%= link_to 'Show', realization %></td>
+    <td><%= link_to 'Edit', edit_realization_path(realization) %></td>
+    <td><%= link_to 'Destroy', realization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Realization', new_realization_path %>

@@ -1,4 +1,13 @@
 SiteTiagoBelem::Application.routes.draw do
+  resources :partners
+
+
+  resources :patronages
+
+
+  resources :realizations
+
+
   resources :movies
 
 

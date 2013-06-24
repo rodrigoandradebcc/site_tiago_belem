@@ -1,0 +1,23 @@
+<h1>Listing patronages</h1>
+
+<table>
+  <tr>
+    <th>Link</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @patronages.each do |patronage| %>
+  <tr>
+    <td><%= patronage.link %></td>
+    <td><%= link_to 'Show', patronage %></td>
+    <td><%= link_to 'Edit', edit_patronage_path(patronage) %></td>
+    <td><%= link_to 'Destroy', patronage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Patronage', new_patronage_path %>

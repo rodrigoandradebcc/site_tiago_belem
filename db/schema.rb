@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130618140400) do
+ActiveRecord::Schema.define(:version => 20130624121219) do
 
   create_table "bios", :force => true do |t|
     t.text     "content"
@@ -20,6 +20,24 @@ ActiveRecord::Schema.define(:version => 20130618140400) do
   end
 
   create_table "movies", :force => true do |t|
+    t.string   "link"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "partners", :force => true do |t|
+    t.string   "link"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "patronages", :force => true do |t|
+    t.string   "link"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "realizations", :force => true do |t|
     t.string   "link"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
