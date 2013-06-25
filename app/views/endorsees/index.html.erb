@@ -1,13 +1,23 @@
-<h1>ENDORSEE</h1>
-<h1>Tiago Belém é Endorsee</h1>
-<table>
-  <tr>
-    <th>Link</th>
-  </tr>
+<div class="container">
+	<div class="row">
+		<h1>ENDORSEE</h1>
+		<h1>Tiago Belém é Endorsee</h1>
+		<table>
+			<tr>
+				<div class="span12"><th>Link Endorsee</th></div>
+				<div class="span12"><th>Link Apoio</th></div>
+			</tr>
 
-<% @tiago_endorsees.each do |tiago_endorsee| %>
-  <tr>
-    <td> <a href="<%= tiago_endorsee.link %>"><%= tiago_endorsee.link %></a> </td>
-  </tr>
-<% end %>
-</table>
+			<% @tiago_endorsees.each do |tiago_endorsee| %>
+			<tr>
+				<td> <a href="<%= tiago_endorsee.link %>"><%= tiago_endorsee.link %></a> </td>
+			</tr>
+			<% end %>
+			<% @patronages.each do |patronage| %>
+			<th>
+				<td><a href="<%= patronage.link %>"><%= patronage.link %></a></td>
+			</th>
+			<% end %>
+		</table>
+	</div>
+</div>

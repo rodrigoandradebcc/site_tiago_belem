@@ -1,6 +1,9 @@
 class EndorseesController < ApplicationController
   def index
   	@tiago_endorsees = TiagoEndorsee.all
+  	@partners = Partner.all
+  	@realiations = Realization.all
+  	@patronages = Patronage.all
 
     respond_to do |format|
       format.html # index.html.erb
