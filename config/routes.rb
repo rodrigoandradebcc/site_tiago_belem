@@ -1,4 +1,6 @@
 SiteTiagoBelem::Application.routes.draw do
+  devise_for :users
+
   resources :schools
 
 

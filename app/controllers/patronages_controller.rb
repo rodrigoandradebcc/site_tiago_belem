@@ -1,6 +1,7 @@
 class PatronagesController < ApplicationController
   # GET /patronages
   # GET /patronages.json
+   load_and_authorize_resource
   def index
     @patronages = Patronage.all
 

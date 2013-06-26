@@ -1,6 +1,7 @@
 class PartnersController < ApplicationController
   # GET /partners
   # GET /partners.json
+   load_and_authorize_resource
   def index
     @partners = Partner.all
 

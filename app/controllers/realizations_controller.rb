@@ -1,6 +1,7 @@
 class RealizationsController < ApplicationController
   # GET /realizations
   # GET /realizations.json
+   load_and_authorize_resource
   def index
     @realizations = Realization.all
 
