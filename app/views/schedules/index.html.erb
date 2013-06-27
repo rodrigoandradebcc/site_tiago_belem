@@ -1,3 +1,4 @@
+<div class="container">
 <%- model_class = Schedule -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
@@ -5,20 +6,16 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
+      
       <th><%= model_class.human_attribute_name(:date_event) %></th>
       <th><%= model_class.human_attribute_name(:specification_event) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @schedules.each do |schedule| %>
       <tr>
-        <td><%= link_to schedule.id, schedule_path(schedule) %></td>
         <td><%= schedule.date_event %></td>
         <td><%= schedule.specification_event %></td>
-        <td><%=l schedule.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_schedule_path(schedule), :class => 'btn btn-mini' %>
@@ -35,4 +32,5 @@
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_schedule_path,
-            :class => 'btn btn-primary' %>
+            :class => 'btn btn-inverse' %>
+</div>

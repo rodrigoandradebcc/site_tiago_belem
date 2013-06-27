@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="row">
+	<!-- <div class="row">
 		<h1>ENDORSEE</h1>
 		<h1>Tiago Belém é Endorsee</h1>
 		<table>
@@ -19,5 +19,21 @@
 			</th>
 			<% end %>
 		</table>
+	</div> -->
+
+	<div class="row-fluid">
+		<h1>ENDORSEE</h1>
+		<h1>Tiago Belém é Endorsee</h1>
+		<div class="span12 well well-large">
+			<% @tiago_endorsees.each do |tiago_endorsee| %>
+				<a href="<%= tiago_endorsee.link %>"><%= tiago_endorsee.link %></a>
+			<% end %>
+		</div>
+		<h1>Apoio</h1>
+		<div class="span12 well well-large">
+			<% @patronages.each do |patronage| %>
+			<a href="<%= patronage.link %>"><%= patronage.link %></a>
+			<% end %>
+		</div>
 	</div>
 </div>
