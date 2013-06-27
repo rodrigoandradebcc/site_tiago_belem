@@ -11,10 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130625114632) do
+ActiveRecord::Schema.define(:version => 20130627113350) do
 
   create_table "bios", :force => true do |t|
     t.text     "content"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  create_table "contacts", :force => true do |t|
+    t.string   "facebook"
+    t.string   "cell_phone"
+    t.string   "email"
+    t.string   "location"
+    t.string   "twitter"
+    t.string   "youtube"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
