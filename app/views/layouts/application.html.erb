@@ -60,9 +60,9 @@
 					
 					<ul class="nav pull-right">
 						<% if current_user.present? %>
-						<li><%= link_to('Sair', destroy_user_session_path, method: 'delete') %></li> 
+						<button class="btn btn-inverse active"><li><%= link_to('Sair', destroy_user_session_path, method: 'delete') %></li></button>
 						<% else %>
-						<li><%= link_to "Entrar", new_session_path(User) %></li>
+						<button class="btn btn-inverse active"><li><%= link_to "Entrar", new_session_path(User) %></li></button>
 						<% end %>
 					</ul>
 
