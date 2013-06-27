@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
   # GET /movies
   # GET /movies.json
+   load_and_authorize_resource
   def index
     @movies = Movie.all
 

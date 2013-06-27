@@ -1,6 +1,7 @@
 class BiosController < ApplicationController
   # GET /bios
   # GET /bios.json
+   load_and_authorize_resource
   def index
     @bios = Bio.all
 

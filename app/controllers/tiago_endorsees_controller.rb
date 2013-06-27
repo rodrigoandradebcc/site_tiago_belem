@@ -1,6 +1,7 @@
 class TiagoEndorseesController < ApplicationController
   # GET /tiago_endorsees
   # GET /tiago_endorsees.json
+   load_and_authorize_resource
   def index
     @tiago_endorsees = TiagoEndorsee.all
 

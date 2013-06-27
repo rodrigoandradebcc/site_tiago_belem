@@ -1,6 +1,7 @@
 class SchoolsController < ApplicationController
   # GET /schools
   # GET /schools.json
+   load_and_authorize_resource
   def index
     @schools = School.all
 

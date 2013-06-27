@@ -1,6 +1,10 @@
 SiteTiagoBelem::Application.routes.draw do
+<<<<<<< HEAD
   resources :contacts
 
+=======
+  devise_for :users
+>>>>>>> 882491fbec328687ca61cffc5add1d2acda995cb
 
   resources :schools
 
