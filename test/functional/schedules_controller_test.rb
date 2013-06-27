@@ -18,7 +18,7 @@ class SchedulesControllerTest < ActionController::TestCase
 
   test "should create schedule" do
     assert_difference('Schedule.count') do
-      post :create, schedule: { month: @schedule.month, specification: @schedule.specification }
+      post :create, schedule: { date_event: @schedule.date_event, specification_event: @schedule.specification_event }
     end
 
     assert_redirected_to schedule_path(assigns(:schedule))
@@ -35,7 +35,7 @@ class SchedulesControllerTest < ActionController::TestCase
   end
 
   test "should update schedule" do
-    put :update, id: @schedule, schedule: { month: @schedule.month, specification: @schedule.specification }
+    put :update, id: @schedule, schedule: { date_event: @schedule.date_event, specification_event: @schedule.specification_event }
     assert_redirected_to schedule_path(assigns(:schedule))
   end
 

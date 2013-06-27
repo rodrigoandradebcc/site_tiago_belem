@@ -1,10 +1,11 @@
 SiteTiagoBelem::Application.routes.draw do
-<<<<<<< HEAD
+
+  resources :schedules
+
+
   resources :contacts
 
-=======
   devise_for :users
->>>>>>> 882491fbec328687ca61cffc5add1d2acda995cb
 
   resources :schools
 
@@ -29,9 +30,6 @@ SiteTiagoBelem::Application.routes.draw do
   get "home/index"
 
   resources :bios
-
-
-  resources :schedules
 
 
   # The priority is based upon order of creation:

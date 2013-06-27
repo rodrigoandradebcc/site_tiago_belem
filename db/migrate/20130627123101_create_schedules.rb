@@ -1,8 +1,8 @@
 class CreateSchedules < ActiveRecord::Migration
   def change
     create_table :schedules do |t|
-      t.string :month
-      t.text :specification
+      t.date :date_event
+      t.text :specification_event
 
       t.timestamps
     end

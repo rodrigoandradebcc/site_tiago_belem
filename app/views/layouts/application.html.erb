@@ -46,60 +46,44 @@
 
 				<div class="nav-collapse collapse active">
 					<ul class="nav">
-						<li class="active"><a href="/home/index"><i class="icon-home icon-white"></i>Home</a></li>
-						<li class="active"><a href="/bios"><i class=" icon-list icon-white"></i>Bio</a></li>
-						<li class="active"><a href="/schedules"><i class="icon-calendar icon-white"></i>Agenda</a></li>
+						<li class="active"><a href="/home/index"><i class="icon-home icon-white"></i> Home</a></li>
+						<li class="active"><a href="/bios"><i class=" icon-list icon-white"></i> Bio</a></li>
+						<li class="active"><a href="/schedules"><i class="icon-calendar icon-white"></i> Agenda</a></li>
 						<li class="active"><a href="/endorsees/index">Endorsee</a></li>
-						<li class="active"><a href="/movies"><i class="icon-facetime-video icon-white"></i>Vídeos</a></li>
-<<<<<<< HEAD
+						<li class="active"><a href="/movies"><i class="icon-facetime-video icon-white"></i> Vídeos</a></li>
 						<li class="active"><a href="/schools">Espaço Musical</a></li>
 						<li class="active"><a href="/contacts">Contato</a></li>
-
-
-
-=======
-						<li class="active"><a href="/schools"><i class=" icon-music icon-white"></i>Espaço Musical</a></li>
->>>>>>> 882491fbec328687ca61cffc5add1d2acda995cb
 					</ul>
 
 					
 					<ul class="nav pull-right">
-				         <% if current_user.present? %>
-				           <li><%= link_to('Sair', destroy_user_session_path, method: 'delete') %></li> 
-				         <% else %>
-				           <li><%= link_to "Entrar", new_session_path(User) %></li>
-				         <% end %>
-		         	</ul>
+						<% if current_user.present? %>
+						<li><%= link_to('Sair', destroy_user_session_path, method: 'delete') %></li> 
+						<% else %>
+						<li><%= link_to "Entrar", new_session_path(User) %></li>
+						<% end %>
+					</ul>
 
-<<<<<<< HEAD
+					
+
+					<form class="navbar-form pull-right" style="padding-top: 10px;">
+
 						<a href="https://www.facebook.com/tiago.b.belem?ref=ts&fref=ts"><%= image_tag 'facebook.png', height: 24, width: 24 %></a>
-						
-
-=======
-					<form class="navbar-form pull-right">
-						<%= image_tag 'facebook.png', height: 24, width: 24 %>
->>>>>>> 882491fbec328687ca61cffc5add1d2acda995cb
 						<%= image_tag 'youtube.png', height: 24, width: 24 %>
 						<%= image_tag 'Instagram.png', height: 24, width: 24 %>
 						<IMG WIDTH=24 HEIGHT=24  align="top">
 						<!-- <input class="span2" type="text" placeholder="Email">
 						<input class="span2" type="password" placeholder="Password">-->
 					</form>
-
-<<<<<<< HEAD
-				
-				<button type="submit" class="btn"> <i class="icon-user icon-white" ></i>			Sign in </button>
-			</form>
-		</div><!--/.nav-collapse -->
-=======
 					
->>>>>>> 882491fbec328687ca61cffc5add1d2acda995cb
+				</form>
+			</div><!--/.nav-collapse -->
 
 
-				</div><!--/.nav-collapse -->
-			</div>
-		</div>
+		</div><!--/.nav-collapse -->
 	</div>
+</div>
+</div>
 
 <div class="container">
 	<!-- /container -->
@@ -128,8 +112,8 @@
 
 </body>
 <div style="widht: 100%; height:2px; background-color:#3C3C3C;">
-      <hr style="display: none;">
-     </div>
+	<hr style="display: none;">
+</div>
 <footer>
 	<div class="container">
 		<p>&copy; Company 2013</p>

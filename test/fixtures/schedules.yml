@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  month: MyString
-  specification: MyText
+  date_event: 2013-06-27
+  specification_event: MyText
 
 two:
-  month: MyString
-  specification: MyText
+  date_event: 2013-06-27
+  specification_event: MyText
