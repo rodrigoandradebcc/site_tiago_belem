@@ -1,36 +1,43 @@
-	<style type="text/css">
-	.centro {
-		text-align: center;
-	}
-	.descer{
-		padding-top: 10%;
-		padding-bottom: 10%;
-	}
-	</style>
-	
-	<div class="container">	
+	<body background = "../assets/fundo_nome3_1.jpg"  >
+		<style type="text/css">
+		.centro {
+			text-align: center;
+		}
+		.descer{
+			padding-top: 10%;
+			padding-bottom: 10%;
+		}
+		</style>
 		
-		<%= render 'layouts/carousel' %>
-	</div>
-	<div class="container marketing descer">
-		<!--Três colunas abaixo do carousel-->
-		<div class="row-fluid">
-			<div class="span4 centro" >
-				<a href=""><%= image_tag 't7.jpg', height: 250, width: 1250 %></a>
-			</div>
-			<div class="span8 centro">
-				<a href="/schools"><%= image_tag 'em.jpg', height: 250, width: 500 %></a>
-			</div>
+		<div class="container">	
+			
+			<%= render 'layouts/carousel' %>
 		</div>
-	</div>
+		<div class="container marketing descer">
+			<!--Três colunas abaixo do carousel-->
+			<div class="row-fluid">
+				<div class="span4 centro" >
+					<a href=""><%= image_tag 't7.jpg', height: 60, width: 1250 %></a>
+				</div>
 
-	<footer>
-		<div style="widht: 100%; height:2px; background-color:#3C3C3C;">
-			<hr style="display: none;">
+
+				<div class="span8 centro">
+					<a href="/schools"><%= image_tag 'em.jpg', height: 250, width: 500 %></a>
+
+				</div>
+			</div>
 		</div>
 
-		<div class="container span9">
-			<p style="padding-top:10px;">&copy; Company 2013 - Tiago Belém Oficial</p>
-		</div>
-		<div class ="span3 pull-right" style="margin-top:5px;"><p>Desenvido por:<br/>Rodrigo Andrade<br/>Daniel Leal<br/>Rafael Ribeiro</p></div>	
-	</footer>
+		<footer>
+			<div style="widht: 100%; height:2px; background-color:#3C3C3C;">
+				<hr style="display: none;">
+			</div>
+
+			<div class="container span9">
+				<p style="padding-top:10px;">&copy; Company 2013 - Tiago Belém Oficial</p>
+			</div>
+
+			<div class ="span3 pull-right" style="margin-top:5px;"><p>Desenvido por:<br/>Rodrigo Andrade<br/>Daniel Leal<br/>Rafael Ribeiro</p></div>	
+		</footer>
+
+	</body>

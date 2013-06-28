@@ -34,7 +34,7 @@
 	<%= csrf_meta_tags %>
 </head>
 
-<body background = "../assets/fundo_tela.png" style = "background-repeat: no-repeat background-attachment: fixed" >
+<body>
 
 	<div class="navbar navbar-inverse navbar-fixed-top active">
 		<div class="navbar-inner">
@@ -51,10 +51,10 @@
 						<li class="active"><a href="/home/index"><i class="icon-home icon-white"></i> Home</a></li>
 						<li class="active"><a href="/bios"><i class=" icon-list icon-white"></i> Bio</a></li>
 						<li class="active"><a href="/schedules"><i class="icon-calendar icon-white"></i> Agenda</a></li>
-						<li class="active"><a href="/endorsees/index">Endorsee</a></li>
+						<li class="active"><a href="/endorsees/index"><i class=" icon-check icon-white "></i> Endorsee</a></li>
 						<li class="active"><a href="/movies"><i class="icon-facetime-video icon-white"></i> Vídeos</a></li>
-						<li class="active"><a href="/schools">Espaço Musical</a></li>
-						<li class="active"><a href="/contacts">Contato</a></li>
+						<li class="active"><a href="/schools"><i class=" icon-music icon-white"></i> Espaço Musical</a></li>
+						<li class="active"><a href="/contacts"><i class=" icon-edit icon-white "></i> Contato</a></li>
 					</ul>
 
 					
@@ -62,7 +62,7 @@
 						<% if current_user.present? %>
 						<button class="btn btn-inverse active"><li><%= link_to('Sair', destroy_user_session_path, method: 'delete') %></li></button>
 						<% else %>
-						<button class="btn btn-inverse active"><li><%= link_to "Entrar", new_session_path(User) %></li></button>
+						<button class="btn btn-inverse active"><li><i class=" icon-user icon-white "></i><%= link_to "    Entrar", new_session_path(User) %></li></button>
 						<% end %>
 					</ul>
 
