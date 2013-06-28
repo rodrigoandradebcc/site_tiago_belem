@@ -55,6 +55,12 @@
 						<li class="active"><a href="/movies"><i class="icon-facetime-video icon-white"></i> Vídeos</a></li>
 						<li class="active"><a href="/schools"><i class=" icon-music icon-white"></i> Espaço Musical</a></li>
 						<li class="active"><a href="/contacts"><i class=" icon-edit icon-white "></i> Contato</a></li>
+						<li class="dropdown">
+							<button class="btn btn-inverse active dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></button>
+							<ul class="dropdown-menu">
+								<li><%= link_to 'Cadastrar Novo Vídeo', :default => ("helpers.movies.new")%>  </li>
+							</ul>
+						</li>
 					</ul>
 
 					
