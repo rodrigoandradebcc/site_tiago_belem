@@ -1,5 +1,11 @@
 SiteTiagoBelem::Application.routes.draw do
 
+  resources :photos
+
+
+  resources :albums
+
+
   resources :schedules
 
 

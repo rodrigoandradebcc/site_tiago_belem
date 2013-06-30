@@ -1,0 +1,23 @@
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <h1 align="center">Álbums</h1><hr>
+      <div class="row">
+        <%for i in (0...@albums.count).step(2) %>
+        <div class="span6">
+          <%= link_to raw(@albums[i].name), album_path(@albums[i].id) %>
+          <% @albums[i].photos.find(:first) do |foto| %>
+            <%= image_tag foto.image_url(:thumb).to_s%>
+          <% end %>
+        </div>
+        <div class="span6">
+          <% if i < (@albums.count-1) %>
+          <%= raw(@albums[i+1].name) %>
+          <% end %>
+        </div>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>
