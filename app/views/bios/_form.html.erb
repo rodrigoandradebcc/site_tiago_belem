@@ -1,4 +1,5 @@
-<%= form_for @bio, :html => { :class => 'form-horizontal' } do |f| %>
+<div class="container">
+  <%= form_for @bio, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
     <%= f.label :content, :class => 'control-label' %>
     <div class="controls">
@@ -6,9 +7,10 @@
     </div>
   </div>
 
-  <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
+  <div class="span12">
+    <%= f.submit nil, :class => 'btn btn-inverse' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                bios_path, :class => 'btn' %>
+    bios_path, :class => 'btn btn-danger' %>
   </div>
-<% end %>
+  <% end %>
+</div>

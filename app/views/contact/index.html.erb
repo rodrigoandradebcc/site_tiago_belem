@@ -5,28 +5,23 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:facebook) %></th>
       <th><%= model_class.human_attribute_name(:cell_phone) %></th>
       <th><%= model_class.human_attribute_name(:email) %></th>
       <th><%= model_class.human_attribute_name(:location) %></th>
       <th><%= model_class.human_attribute_name(:twitter) %></th>
       <th><%= model_class.human_attribute_name(:youtube) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @contacts.each do |contact| %>
       <tr>
-        <td><%= link_to contact.id, contact_path(contact) %></td>
         <td><%= contact.facebook %></td>
         <td><%= contact.cell_phone %></td>
         <td><%= contact.email %></td>
         <td><%= contact.location %></td>
         <td><%= contact.twitter %></td>
         <td><%= contact.youtube %></td>
-        <td><%=l contact.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_contact_path(contact), :class => 'btn btn-mini' %>
