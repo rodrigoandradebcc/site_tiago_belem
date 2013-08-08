@@ -2,7 +2,7 @@ class EndorseesController < ApplicationController
   def index
   	@tiago_endorsees = TiagoEndorsee.all
   	@partners = Partner.all
-  	@realiations = Realization.all
+  	@realizations = Realization.all
   	@patronages = Patronage.all
 
     respond_to do |format|

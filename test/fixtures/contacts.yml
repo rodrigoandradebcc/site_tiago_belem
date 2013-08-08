@@ -2,16 +2,16 @@
 
 one:
   facebook: MyString
-  cell_phone: MyString
+  number_phone: MyString
   email: MyString
-  location: MyString
+  city: MyString
   twitter: MyString
   youtube: MyString
 
 two:
   facebook: MyString
-  cell_phone: MyString
+  number_phone: MyString
   email: MyString
-  location: MyString
+  city: MyString
   twitter: MyString
   youtube: MyString

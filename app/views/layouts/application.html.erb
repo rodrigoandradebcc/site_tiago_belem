@@ -54,10 +54,10 @@
 						<li class="active"><a href="/albums"><i class=" icon-camera icon-white "></i> Álbums</a></li>
 						<li class="active"><a href="/schools"><i class=" icon-music icon-white"></i> Espaço Musical</a></li>
 						<li class="active"><a href="/contacts"><i class=" icon-edit icon-white "></i> Contato</a></li>
-						<div class="push-bottom">
+						<li class="active">
 							<% if current_user.present? %>
 							<div class="dropdown pull-right">
-								<button class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></button>
+								<a href="#" class="active dropdown-toggle btn btn-inverse" data-toggle="dropdown"><b class="caret"></b><i class="icon-cog"></i></a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
 									<li><%= link_to "Agenda", new_schedule_path %></li>
 									<li><%= link_to "Contato", new_contact_path %></li>
@@ -72,7 +72,7 @@
 								</ul>
 							</div>
 							<% end %>
-						</div>
+						</li>
 					</ul>
 
 					
@@ -87,11 +87,9 @@
 					
 
 					<form class="navbar-form pull-right social" style="padding-top: 10px;">
-
-						<a href="https://www.facebook.com/tiago.b.belem?ref=ts&fref=ts"><%= image_tag 'facebook.png', height: 22, width: 22 %></a>
-						<%= image_tag 'youtube.png', height: 24, width: 24 %>
-						<%= image_tag 'Instagram.png', height: 24, width: 24 %>
-						<IMG WIDTH=24 HEIGHT=24  align="top">
+						<a href="https://www.facebook.com/tiago.b.belem?ref=ts&fref=ts"><i class="icon-facebook-sign icon-2x"></i></a>
+						<a href="#"><i class="icon-youtube"></i></a>
+						<a href=""><i class="icon-instagram icon-2x"></i></a>
 						</form>
 
 					</form>

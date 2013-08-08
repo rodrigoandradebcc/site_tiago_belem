@@ -1,16 +1,26 @@
-<div class="container">
-<%- model_class = Contact -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
-</div>
+<div class="row-fluid">
+    <div class="span4">
+      <img src="../assets/tiago13.JPG">
+    </div>
+    <div class="span8">
+        <%- model_class = Contact -%>
+    <div class="page-header">
+      <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    </div>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:facebook) %></th>
+      <th><i class="icon-facebook-sign"> <%=model_class.human_attribute_name(:facebook) %></th>
       <th><%= model_class.human_attribute_name(:cell_phone) %></th>
+      <% if @contacts.first %>
+      <%= @contacts.first.facebook %>
+      <% end %>
       <th><%= model_class.human_attribute_name(:email) %></th>
+      
       <th><%= model_class.human_attribute_name(:location) %></th>
+      http://fortawesome.github.io/Font-Awesome/icon/twitter-sign/
       <th><%= model_class.human_attribute_name(:twitter) %></th>
+      <i class="icon-youtube-sign"></i>
       <th><%= model_class.human_attribute_name(:youtube) %></th>
     </tr>
   </thead>
@@ -40,4 +50,6 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_contact_path,
             :class => 'btn btn-inverse' %>
+
+    </div>
 </div>

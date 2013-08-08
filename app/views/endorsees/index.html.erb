@@ -35,5 +35,17 @@
 			<a href="<%= patronage.link %>"><%= patronage.link %></a>
 			<% end %>
 		</div>
+		<h1>Realização</h1>
+		<div class="span12 well well-large">
+			<% @realizations.each do |realization| %>
+  			<a href="<%= realization.link %>"><%= realization.link %></a>
+			<% end %>
+		</div>
+		<h1>Parceiros</h1>
+		<div class="span12 well well-large">
+			<% @partners.each do |partner| %>
+  			<a href="<%= partner.link %>"><%= partner.link %></a>
+			<% end %>
+		</div>
 	</div>
 </div>

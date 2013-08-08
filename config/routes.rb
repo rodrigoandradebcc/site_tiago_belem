@@ -8,9 +8,6 @@ SiteTiagoBelem::Application.routes.draw do
 
   resources :schedules
 
-
-  resources :contacts
-
   devise_for :users
 
   resources :schools
@@ -26,7 +23,8 @@ SiteTiagoBelem::Application.routes.draw do
 
 
   resources :movies
-
+  
+  resources :contacts
 
   resources :tiago_endorsees
 
