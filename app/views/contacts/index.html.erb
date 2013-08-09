@@ -11,17 +11,17 @@
   <thead>
     <tr>
       <th><i class="icon-facebook-sign"> <%=model_class.human_attribute_name(:facebook) %></th>
-      <th><%= model_class.human_attribute_name(:cell_phone) %></th>
+      <th><i class="icon-mobile-phone"> <%= model_class.human_attribute_name(:cell_phone) %></th>
       <% if @contacts.first %>
       <%= @contacts.first.facebook %>
       <% end %>
-      <th><%= model_class.human_attribute_name(:email) %></th>
+      <th><i class="icon-envelope-alt"> <%= model_class.human_attribute_name(:email) %></th>
       
-      <th><%= model_class.human_attribute_name(:location) %></th>
+      <th><i class="icon-location-arrow"> <%= model_class.human_attribute_name(:location) %></th>
       http://fortawesome.github.io/Font-Awesome/icon/twitter-sign/
-      <th><%= model_class.human_attribute_name(:twitter) %></th>
-      <i class="icon-youtube-sign"></i>
-      <th><%= model_class.human_attribute_name(:youtube) %></th>
+      <th><i class="icon-twitter-sign"> <%= model_class.human_attribute_name(:twitter) %></th>
+      
+      <th><i class="icon-youtube-play"> <%= model_class.human_attribute_name(:youtube) %></th>
     </tr>
   </thead>
   <tbody>
