@@ -77,75 +77,19 @@ pt-BR:
   activerecord:
     models:
       user: Usuário
-      bed: Leito
-      feature: Habilidades
-      ward: Enfermaria
-      unit: Unidade
-      role: Papel
-      patient: Paciente
-      hospital: Hospital
-      antecedent: Antecedente
-      admission: Internação
+      schedule: Eventos
+      bio: Bio
+      school: Escola
     attributes:
       user:
         email: Email
         password: Senha
-        
-        password_confirmation: Confirme sua Senha
-        enable: Ativo
-        first_name: Nome
-        last_name:  Sobrenome
-        user_name: Usuário
-        photo: Foto
-        role_id: Id do Papel
-      bed:
-        bed_name: Nome Leito
-        bed_number: Número do Leito
-        ward_id: Id da Enfermaria
-      feature:
-        description: Descrição
-        permission: Permissão
-        table: Tabela
-        role_ids: Id da Função
-      ward:
-        ward_name: Nome da Enfermaria
-        ward_number: Número da Enfermaria
-        unit_id: Id da Unidade
-      unit:
-        unit_branch_number: Número do Ramal 
-        unit_name: Nome da Unidade
-        unit_number: Número da Unidade
-        hospital_id: Id do Hospital
-      role:
-        name: Função
-        feature_ids: Id da Habilidade
-      patient:
-        dt_birth: Data de Nascimento
-        patient_name: Nome do Paciente
-        patient_observations: Observação do Paciente
-        patient_register: Registro do Paciente
-        patient_sex: Sexo do Paciente
-        patient_age: Idade do Paciente
-        patient_situation: Situação do Paciente
-        specialty: Especialidade
-      hospital:
-        hospital_address: Endereço do Hospital
-        hospital_city: Cidade do Hospital
-        hospital_state: Estado do Hospital
-        hospital_email: Email do Hospital
-        hospital_manager: Gerente do Hospital
-        hospital_name: Nome do Hospital
-        hospital_phone: Telefone do Hospital
-        hospital_technical: Técnico Hospitalar
-      antecedent:
-        name: Nome
-        admission_ids: Id da Internação
-      admission:
-        description: Descrição
-        dt_admission: Data da Entrada
-        transfer: Transferencia
-        reason_admission: Motivo
-        patient_id: Id do Paciente
-        bed_id: Id do Leito
-        antecedent_ids: Id dos Antecendetes
-        user_id: Id do Usuário
+        password_confirmation: Confirmação de Senha
+        roles_ids: Id do Papel
+      schedule:
+        date_event: Data do evento
+        specification_event: Especificação do Evento
+      bio:
+        content: Conteudo
+      school:
+        content: Conteudo

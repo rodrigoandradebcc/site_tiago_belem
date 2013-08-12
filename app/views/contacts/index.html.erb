@@ -7,6 +7,9 @@
     <div class="page-header">
       <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
     </div>
+
+</hr>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -20,7 +23,6 @@
       <th><i class="icon-location-arrow"> <%= model_class.human_attribute_name(:location) %></th>
       
       <th><i class="icon-twitter-sign"> <%= model_class.human_attribute_name(:twitter) %></th>
-      
       <th><i class="icon-facetime-video"> <%= model_class.human_attribute_name(:youtube) %></th>
     </tr>
   </thead>
