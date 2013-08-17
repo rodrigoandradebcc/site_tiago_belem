@@ -1,16 +1,13 @@
-<%= form_for @schedule, :html => { :class => 'form-horizontal' } do |f| %>
+<%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %>
+<%= simple_form_for @schedule, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
     <%= f.label :date_event, :class => 'control-label' %>
     <div class="controls">
       <%= f.date_select :date_event, :class => 'date_select' %>
     </div>
   </div>
-  <div class="control-group">
-    <%= f.label :specification_event, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :specification_event, :class => 'text_area' %>
-    </div>
-  </div>
+
+  <%= f.input :specification_event, as: :ckeditor , label: "Especificação do Evento" %>
 
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>

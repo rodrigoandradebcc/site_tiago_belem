@@ -31,6 +31,7 @@ gem 'cancan'
 gem 'simple_form'
 gem 'carrierwave'
 gem 'rmagick'
+gem "ckeditor", :git => "git://github.com/galetahub/ckeditor.git"
 
 group :development do
 	gem 'better_errors'

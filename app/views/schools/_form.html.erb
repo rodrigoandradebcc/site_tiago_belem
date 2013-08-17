@@ -1,10 +1,7 @@
-<%= form_for @school, :html => { :class => 'form-horizontal' } do |f| %>
-  <div class="control-group">
-    <%= f.label :content, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :content, :class => 'text_area' %>
-    </div>
-  </div>
+<%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %>
+<%= simple_form_for @school, :html => { :class => 'form-horizontal' } do |f| %>
+  
+  <%= f.input :content, as: :ckeditor , label: "Conteúdo" %>
 
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
@@ -12,3 +9,6 @@
                 schools_path, :class => 'btn' %>
   </div>
 <% end %>
+
+
+
