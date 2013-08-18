@@ -1,0 +1,74 @@
+#fundo {
+  text-align: left;
+  height:100%;
+  width: 90%;
+  margin: 2% 2% 2% 3%;
+  background-color: rgba(255,255,255,0.2);
+  padding: 2%;
+  box-shadow: #333 0 0px 6px;
+  border-radius: 3px;
+}
+
+#fundo_dois{
+  text-align: left;
+  height:90%;
+  width: 90%;
+  margin: 2% 2% 2% 3%;
+  background-color: rgba(255,255,255,0.1);
+  padding: 2%;
+  box-shadow: #333 0 0px 6px;
+  border-radius: 3px;
+}
+
+#fundo_tres{
+  text-align: left;
+  height:90%;
+  width: 100%;
+  margin: 2% 2% 2% 3%;
+  background-color: rgba(255,255,255,0.2);
+  padding: 2%;
+  box-shadow: #333 0 0px 6px;
+  border-radius: 3px;
+}
+#fundo_dois img{
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+#fundo_dois h3{
+  margin-top: 0px;
+  color: #000000;
+  text-shadow: #333 2px 2px 2px;
+}
+#fundo_dois ul {
+  float: left;
+  display: block;
+  position: relative;
+  height:!important;
+  width: 45%; 
+  padding: 10px;
+  background-color: rgba(240,240,200,0.6);
+  border: 1px solid #333333;
+  box-shadow: #333 0 0px 6px; 
+  border-radius: 10px;
+}
+
+#fundo_dois ul:hover{
+    background-color: rgba(240,240,200,1.0);
+  }
+
+#prova{
+  border: 1px solid #000088;
+}
+
+#prova h1{
+  border-bottom: 1px solid #000088;
+  border-left: 4px solid #000088;
+  padding-left: 10px;
+  margin-top: 0px;
+  background-color: rgba(180, 182, 255, 0.6);
+}
+#prova ol{
+  border-bottom: 1px solid #000088;
+}

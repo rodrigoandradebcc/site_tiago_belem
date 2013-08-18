@@ -2,7 +2,10 @@
 <div class="container">
   <div class="row">
     <div class="span12">
-      <h1 align="center">Vídeos</h1><hr>
+      <div id="fundo_dois">
+      <h1 align="center">Vídeos</h1>
+    </div>
+    <hr size=3 width=1170>
       <div class="row">
         <%for i in (0...@movies.count).step(2) %>
         <div class="span6"><%= raw(@movies[i].link) %></div>
