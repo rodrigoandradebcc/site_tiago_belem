@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+while(true)
+{
+	var answer = prompt("Rodrigo é gay?");
+	if (answer != "sim")
+	{
+		alert("NOOB. Resposta Errada, tente novamente!!!");
+	}
+	else
+	{
+		break;
+	}
+}
