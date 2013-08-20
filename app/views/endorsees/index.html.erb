@@ -21,31 +21,40 @@
 		</table>
 	</div> -->
 
+<div id="fundo_font">
+
 	<div class="row-fluid">
-		<h1>ENDORSEE</h1>
+		<div id="fundo_dois">
+		<h1>
+			<p align= "center">ENDORSEE</p>
+			</h1>
+			
+	</div>
+	<hr size=3 width=1175>
 		<h3>Tiago Belém é Endorsee</h3>
-		<div class="span12 well well-large">
+		<div id="fundo_tres">
 			<% @tiago_endorsees.each do |tiago_endorsee| %>
 				<a href="<%= tiago_endorsee.link %>"><%= tiago_endorsee.link %></a>
 			<% end %>
 		</div>
 		<h3>Apoio</h3>
-		<div class="span12 well well-large">
+		<div id="fundo_tres">
 			<% @patronages.each do |patronage| %>
 			<a href="<%= patronage.link %>"><%= patronage.link %></a>
 			<% end %>
 		</div>
 		<h3>Realização</h3>
-		<div class="span12 well well-large">
+		<div id="fundo_tres">
 			<% @realizations.each do |realization| %>
   			<a href="<%= realization.link %>"><%= realization.link %></a>
 			<% end %>
 		</div>
 		<h3>Parceiros</h3>
-		<div class="span12 well well-large">
+		<div id="fundo_tres">
 			<% @partners.each do |partner| %>
   			<a href="<%= partner.link %>"><%= partner.link %></a>
 			<% end %>
 		</div>
 	</div>
+</div>
 </div>

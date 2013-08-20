@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+<<<<<<< HEAD
 //= require_tree .
 var answer;
 
@@ -29,3 +30,6 @@ while(true)
 	}
 	
 }
+=======
+//= require_tree .
+>>>>>>> c6eaac81986c6c079777682ec8e67f15ef04c3b0
