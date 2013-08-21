@@ -43348,3 +43348,1983 @@ Served asset /inst.png - 304 Not Modified (0ms)
 
 Started GET "/assets/fundo_tela.png" for 127.0.0.1 at 2013-08-20 21:44:16 -0300
 Served asset /fundo_tela.png - 304 Not Modified (6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-20 21:58:21 -0300
+Processing by HomeController#index as HTML
+  [1m[36mTiagoEndorsee Load (0.1ms)[0m  [1mSELECT `tiago_endorsees`.* FROM `tiago_endorsees` [0m
+  [1m[35mPartner Load (0.1ms)[0m  SELECT `partners`.* FROM `partners` 
+  [1m[36mRealization Load (0.1ms)[0m  [1mSELECT `realizations`.* FROM `realizations` [0m
+  [1m[35mPatronage Load (0.1ms)[0m  SELECT `patronages`.* FROM `patronages` 
+  Rendered layouts/_carousel.html.erb (15.1ms)
+  Rendered home/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 484ms (Views: 422.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-20 21:58:22 -0300
+Processing by HomeController#index as HTML
+  [1m[36mTiagoEndorsee Load (2.2ms)[0m  [1mSELECT `tiago_endorsees`.* FROM `tiago_endorsees` [0m
+  [1m[35mPartner Load (0.2ms)[0m  SELECT `partners`.* FROM `partners` 
+  [1m[36mRealization Load (0.7ms)[0m  [1mSELECT `realizations`.* FROM `realizations` [0m
+  [1m[35mPatronage Load (9.5ms)[0m  SELECT `patronages`.* FROM `patronages` 
+  Rendered layouts/_carousel.html.erb (16.5ms)
+  Rendered home/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 439ms (Views: 422.9ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/assets/css/bootstrap-reseponsive.css" for 127.0.0.1 at 2013-08-20 21:58:22 -0300
+Served asset /css/bootstrap-reseponsive.css - 404 Not Found (7ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-reseponsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-20 21:58:22 -0300
+Served asset /application.css - 200 OK (29ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-20 21:58:22 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/fundo.css?body=1" for 127.0.0.1 at 2013-08-20 21:58:22 -0300
+Served asset /fundo.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2013-08-20 21:58:22 -0300
+Served asset /css/bootstrap.css - 404 Not Found (8ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2013-08-20 21:58:22 -0300
+Served asset /bootstrap-datepicker.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:22 -0300
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (97ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.bg.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ca.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cy.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.el.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.et.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.he.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:23 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.hr.js - 304 Not Modified (106ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /css/bootstrap.css - 404 Not Found (20ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/css/bootstrap-reseponsive.css" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /css/bootstrap-reseponsive.css - 404 Not Found (16ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-reseponsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fundo.css?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /fundo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.id.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ja.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.hu.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ka.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.kr.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lt.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.mk.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.no.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:24 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js - 304 Not Modified (120ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pt.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ro.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.rs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sk.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sl.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sq.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sw.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.bg.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ca.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.el.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.et.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.he.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.hr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.hu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.id.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ja.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ka.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.kr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lt.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:25 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.mk.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.no.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pt.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ro.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.rs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sk.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sq.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sw.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ua.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.uk.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (189ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /albums.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bios.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /contacts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /home.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ua.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.uk.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /bios.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:26 -0300
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /movies.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/endorsees.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /endorsees.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /partners.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/patronages.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /patronages.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /photos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/realizations.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /realizations.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /application.js - 200 OK (179ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/endorsees.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /endorsees.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/patronages.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /patronages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/realizations.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /realizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /schedules.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/schools.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /schools.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/js/holder/holder.js" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /js/holder/holder.js - 404 Not Found (10ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/holder/holder.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/tiago_endorsees.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /tiago_endorsees.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nome1.png" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /nome1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/face.png" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /face.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /schedules.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schools.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /schools.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago_endorsees.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /tiago_endorsees.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tube.png" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /tube.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/inst.png" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /inst.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /css/bootstrap-responsive.css - 404 Not Found (7ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-responsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/tiago1.JPG" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /tiago1.JPG - 304 Not Modified (143ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/t8.jpg" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /t8.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/js/holder/holder.js" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /js/holder/holder.js - 404 Not Found (8ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/holder/holder.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/tiago8.jpg" for 127.0.0.1 at 2013-08-20 21:58:27 -0300
+Served asset /tiago8.jpg - 304 Not Modified (58ms)
+
+
+Started GET "/assets/nome1.png" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /nome1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /css/bootstrap-responsive.css - 404 Not Found (12ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-responsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/assets/face.png" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /face.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tube.png" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /tube.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/inst.png" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /inst.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t8.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /t8.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /t.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/em.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /em.jpg - 304 Not Modified (108ms)
+
+
+Started GET "/assets/bateria.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /bateria.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/t4.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /t4.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/fundo_tela.png" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /fundo_tela.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /fontawesome-webfont.woff - 304 Not Modified (14ms)
+
+
+Started GET "/assets/t.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /t.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/em.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /em.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bateria.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /bateria.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/t4.jpg" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /t4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fundo_tela.png" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /fundo_tela.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago1.JPG" for 127.0.0.1 at 2013-08-20 21:58:28 -0300
+Served asset /tiago1.JPG - 304 Not Modified (21ms)
+
+
+Started GET "/assets/tiago8.jpg" for 127.0.0.1 at 2013-08-20 21:58:29 -0300
+Served asset /tiago8.jpg - 304 Not Modified (42ms)
+
+
+Started GET "/schedules" for 127.0.0.1 at 2013-08-20 21:58:30 -0300
+Processing by SchedulesController#index as HTML
+  [1m[36mSchedule Load (0.2ms)[0m  [1mSELECT `schedules`.* FROM `schedules` [0m
+Completed 500 Internal Server Error in 21ms
+
+NoMethodError - undefined method `order' for #<Array:0xb426e30>:
+  app/controllers/schedules_controller.rb:5:in `index'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__24194992__process_action__215432631__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__146417109__call__80248376__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/94551130/variables" for 127.0.0.1 at 2013-08-20 21:58:31 -0300
+
+
+Started GET "/schedules" for 127.0.0.1 at 2013-08-20 21:59:36 -0300
+Processing by SchedulesController#index as HTML
+  [1m[35mSchedule Load (0.1ms)[0m  SELECT `schedules`.* FROM `schedules` 
+Completed 500 Internal Server Error in 22ms
+
+NoMethodError - undefined method `order' for #<Array:0xb4b5c98>:
+  app/controllers/schedules_controller.rb:5:in `index'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__24194992__process_action__215432631__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__146417109__call__80248376__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/94808160/variables" for 127.0.0.1 at 2013-08-20 21:59:37 -0300
+
+
+Started GET "/schedules" for 127.0.0.1 at 2013-08-20 21:59:53 -0300
+Processing by SchedulesController#index as HTML
+  [1m[36mSchedule Load (0.1ms)[0m  [1mSELECT `schedules`.* FROM `schedules` [0m
+Completed 500 Internal Server Error in 12ms
+
+NoMethodError - undefined method `order' for #<Array:0x9bb40f0>:
+  app/controllers/schedules_controller.rb:5:in `index'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__24194992__process_action__215432631__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__146417109__call__80248376__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/83587010/variables" for 127.0.0.1 at 2013-08-20 21:59:53 -0300
+
+
+Started GET "/schedules" for 127.0.0.1 at 2013-08-20 21:59:58 -0300
+Processing by SchedulesController#index as HTML
+  [1m[35mSchedule Load (0.1ms)[0m  SELECT `schedules`.* FROM `schedules` 
+Completed 500 Internal Server Error in 13ms
+
+NoMethodError - undefined method `order' for #<Array:0xa2075b0>:
+  app/controllers/schedules_controller.rb:5:in `index'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__24194992__process_action__215432631__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__146417109__call__80248376__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/87588040/variables" for 127.0.0.1 at 2013-08-20 21:59:58 -0300
+
+
+Started GET "/schedules" for 127.0.0.1 at 2013-08-20 22:01:52 -0300
+Processing by SchedulesController#index as HTML
+  [1m[36mSchedule Load (0.1ms)[0m  [1mSELECT `schedules`.* FROM `schedules` [0m
+Completed 500 Internal Server Error in 29ms
+
+NoMethodError - undefined method `order' for #<Array:0xae47884>:
+  app/controllers/schedules_controller.rb:5:in `index'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__24194992__process_action__215432631__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__146417109__call__80248376__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/94032320/variables" for 127.0.0.1 at 2013-08-20 22:01:52 -0300
+
+
+Started GET "/schedules" for 127.0.0.1 at 2013-08-20 22:01:53 -0300
+Processing by SchedulesController#index as HTML
+  [1m[35mSchedule Load (1.3ms)[0m  SELECT `schedules`.* FROM `schedules` 
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError - undefined method `order' for #<Array:0xb4a6068>:
+  app/controllers/schedules_controller.rb:5:in `index'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__24194992__process_action__215432631__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__146417109__call__80248376__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/94721740/variables" for 127.0.0.1 at 2013-08-20 22:01:53 -0300
+
+
+Started GET "/schedules" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Processing by SchedulesController#index as HTML
+  [1m[36mSchedule Load (2.2ms)[0m  [1mSELECT `schedules`.* FROM `schedules` ORDER BY date_event[0m
+  Rendered schedules/index.html.erb within layouts/application (109.3ms)
+Completed 200 OK in 396ms (Views: 388.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /css/bootstrap.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap-reseponsive.css" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /css/bootstrap-reseponsive.css - 404 Not Found (17ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-reseponsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/noode/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/noode/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.0ms)
+
+
+Started GET "/assets/fundo.css?body=1" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /fundo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:07 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.bg.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ca.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.el.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.et.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.he.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.hr.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.hu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.id.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ja.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ka.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.kr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lt.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.mk.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.no.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pt.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ro.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.rs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:08 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sq.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sw.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sk.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ua.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.uk.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (103ms)
+
+
+Started GET "/assets/bios.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/endorsees.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /endorsees.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/patronages.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /patronages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/realizations.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /realizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schedules.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /schedules.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/schools.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /schools.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tiago_endorsees.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /tiago_endorsees.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /application.js - 304 Not Modified (65ms)
+
+
+Started GET "/assets/nome1.png" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /nome1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/face.png" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /face.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tube.png" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /tube.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/t7.jpg" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /t7.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/fundo_tela.png" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /fundo_tela.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/inst.png" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /inst.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-08-20 22:02:09 -0300
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nome_t.jpg" for 127.0.0.1 at 2013-08-20 22:02:10 -0300
+Served asset /nome_t.jpg - 304 Not Modified (1ms)

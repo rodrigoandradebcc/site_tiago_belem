@@ -2,7 +2,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.json
   def index
-    @schedules = Schedule.all.order(:date_event)
+    @schedules = Schedule.order(:date_event)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -80,5 +80,4 @@ class SchedulesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
 end
