@@ -7,7 +7,7 @@
     </div>
     <hr size=3 width=1170>
       <div class="row">
-        <%for i in (0...@albums.count).step(2) %>
+        <% for i in (0...@albums.count).step(2) %>
         <div class="span6">
           <%= link_to raw(@albums[i].name), album_path(@albums[i].id) %>
           <% @albums[i].photos.find(:first) do |foto| %>
@@ -16,7 +16,10 @@
         </div>
         <div class="span6">
           <% if i < (@albums.count-1) %>
-          <%= raw(@albums[i+1].name) %>
+            <%= link_to raw(@albums[i+1].name), album_path(@albums[i+1].id) %>
+            <% @albums[i+1].photos.find(:first) do |foto| %>
+              <%= image_tag foto.image_url(:thumb).to_s%>
+            <% end %>
           <% end %>
         </div>
         <%end%>
@@ -24,3 +27,4 @@
     </div>
   </div>
 </div>
+
