@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/Nerian/bootstrap-datepicker-rails.git
+  revision: 690c20ed9e02a05e41f8929ee5156fc77fd0b45e
+  specs:
+    bootstrap-datepicker-rails (1.1.1.7)
+      railties (>= 3.0)
+
+GIT
   remote: git://github.com/galetahub/ckeditor.git
   revision: 95c05eb23b81298dfb204da72ce04a8141118ce5
   specs:
@@ -153,6 +160,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  bootstrap-datepicker-rails!
   cancan
   carrierwave
   ckeditor!

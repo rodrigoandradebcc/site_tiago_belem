@@ -13,23 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-<<<<<<< HEAD
+//= require bootstrap-datepicker
+//= require bootstrap-datepicker/core
 //= require_tree .
-var answer;
-
-while(true)
-{
-	answer = prompt("Rodrigo é gay?")
-	if(answer == "sim")
-	{
-		break;
-	}
-	else
-	{
-		alert("NOOB! Resposta errada, o Rodrigo é gay!\n tente novamente!");
-	}
-	
-}
-=======
-//= require_tree .
->>>>>>> c6eaac81986c6c079777682ec8e67f15ef04c3b0
