@@ -10,16 +10,26 @@
 }
 
 #fundo_dois{
+  text-align: center;
+  height:90%;
+  width: 90%;
+  margin: 2% 2% 2% 3%;
+  background-color: rgba(255,255,255,0.1);
+  padding: 2%;
+  box-shadow: #AEEEEE 0 0px 50px;
+  border-radius: 50px;
+}
+
+#fundo_novo{
   text-align: left;
   height:90%;
   width: 90%;
   margin: 2% 2% 2% 3%;
   background-color: rgba(255,255,255,0.1);
   padding: 2%;
-  box-shadow: #333 0 0px 6px;
-  border-radius: 3px;
+  box-shadow: #AEEEEE 0 0px 15px;
+  border-radius: 15px;
 }
-
 #fundo_tres{
   text-align: left;
   height:90%;
@@ -27,9 +37,10 @@
   margin: 2% 2% 2% 3%;
   background-color: rgba(255,255,255,0.1);
   padding: 2%;
-  box-shadow: #333 0 0px 6px;
-  border-radius: 3px;;
+  box-shadow: #AEEEEE 0 0px 15px;
+  border-radius: 15px;;
 }
+
 #fundo_dois img{
   float: left;
   width: 100px;
@@ -53,6 +64,11 @@
   height: 200px; 
   border: 2px solid #696969
 
+}
+
+#fundo_aplicar_quatro img{
+  width: 230px;
+  height: 150px; 
   
 }
 

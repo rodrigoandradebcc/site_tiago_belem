@@ -19,16 +19,7 @@
       <tbody>
         <% @bios.each do |bio| %>
         <tr>
-          <td><%= bio.content %></td>
-          <td>
-            <%= link_to t('.edit', :default => t("helpers.links.edit")),
-            edit_bio_path(bio), :class => 'btn btn-mini btn-inverse' %>
-            <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-            bio_path(bio),
-            :method => :delete,
-            :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-            :class => 'btn btn-mini btn-danger' %>
-          </td>
+          
         </tr>
         <% end %>
       </tbody>

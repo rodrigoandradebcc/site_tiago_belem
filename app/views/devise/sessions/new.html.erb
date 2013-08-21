@@ -4,11 +4,13 @@
   <link rel="shortcut icon" href="assets/t7.1.jpg">
 
 <h2>
+  <div id="fundo_dois"> 
 	<p align= "center">Sign in</p>
-	<hr size=3 width=1170>
+	</div>
+  <hr size=3 width=1170>
 	
 	</h2>
-<div id="fundo">
+<div id="fundo_novo">
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <div><p align= "center"><%= f.label :email %><br/>
   <%= f.email_field :email, :autofocus => true %></div>

@@ -2,9 +2,14 @@
 <div class="row-fluid"></div>
 <%- model_class = Bio -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+  <div id="fundo_dois">
+  <h1>
+    <p align= "center"><%=t '.title', :default => model_class.model_name.human %>
+    </p>
+  </h1>
 </div>
-
+</div>
+<div id="fundo_novo">
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:content) %>:</strong></dt>
   <dd><%= @bio.content %></dd>
@@ -21,5 +26,5 @@
   :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
   :class => 'btn btn-danger' %>
 </div>
-
+</div>
 

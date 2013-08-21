@@ -3,13 +3,16 @@
 <%- model_class = School -%>
 
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %> </h1>
 </div>
+
 <table class="table table-striped">
   <thead>
     <tr>
       
       <th><%= model_class.human_attribute_name(:content) %></th>
+
     </tr>
   </thead>
   <tbody>

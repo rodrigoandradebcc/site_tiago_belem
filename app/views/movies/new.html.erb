@@ -1,5 +1,12 @@
 <%- model_class = Movie -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human %></h1>
+	<div id="fundo_dois">
+  <h1>
+  	<p align= "center"><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human %>
+  	</p>
+  </h1>
+  </div>
 </div>
+<div id="fundo_novo">
 <%= render :partial => 'form' %>
+</div>
