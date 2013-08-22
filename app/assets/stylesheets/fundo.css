@@ -100,8 +100,9 @@ font-family: sans-serif;
     background-color: rgba(240,240,200,1.0);
   }
 
-#prova{
-  border: 1px solid #000088;
+#rodape{
+  font-family: "georgia", "Lucida Sans", Verdana, Sans-Serif;
+  color:#FFFFFF;
 }
 
 #prova h1{

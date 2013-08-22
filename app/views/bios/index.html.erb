@@ -1,21 +1,19 @@
 <div class="container">
   <div class="row-fluid">
-    <%- model_class = Bio -%>
+        <%- model_class = Bio -%>
+
     <div class="page">
       <div id="fundo_dois">
+        <div id="rodape">
         <h1>
       <p align= "center">Bio</p>
-      
+      </div>
     </h1>
     </div>
-    <hr size=3 width=1170>
+    <hr width=1170>
     </div>
     <table class="table">
-      <thead>
-        <tr>
-          <th><%= model_class.human_attribute_name(:content) %></th>
-        </tr>
-      </thead>
+      
       <tbody>
         <% @bios.each do |bio| %>
         <tr>
