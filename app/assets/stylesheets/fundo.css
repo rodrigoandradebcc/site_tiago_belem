@@ -78,6 +78,7 @@
   text-shadow: #333 2px 2px 2px;
 }
 
+
 #fundo_font h3{
 font-family: verdana, helvetica, serif;
 font-family: sans-serif;
@@ -105,13 +106,16 @@ font-family: sans-serif;
   color:#FFFFFF;
 }
 
-#prova h1{
-  border-bottom: 1px solid #000088;
-  border-left: 4px solid #000088;
-  padding-left: 10px;
-  margin-top: 0px;
-  background-color: rgba(180, 182, 255, 0.6);
+#rodape_fundo{
+background:url("../assets/rodape.PNG") ;
+bottom:0;
+height:101px;
+left:0;
+width:100%;
+margin-right: 0px;
+margin-left: 0px;
+position: relative;
+
+
 }
-#prova ol{
-  border-bottom: 1px solid #000088;
-}
+
