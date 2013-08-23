@@ -10,14 +10,17 @@
 }
 
 #fundo_dois{
+
   text-align: center;
-  height:90%;
+  height:10%;
   width: 90%;
   margin: 2% 2% 2% 3%;
   background-color: rgba(255,255,255,0.1);
   padding: 2%;
-  box-shadow: #AEEEEE 0 0px 50px;
+  box-shadow: #BCD2EE 0 0px 40px;
   border-radius: 50px;
+  background:url("../assets/rodape.PNG") ;
+
 }
 
 #fundo_novo{
@@ -29,6 +32,10 @@
   padding: 2%;
   box-shadow: #AEEEEE 0 0px 15px;
   border-radius: 15px;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-image:url("../assets/bateria.jpg")
+  
 }
 #fundo_tres{
   text-align: left;
@@ -114,7 +121,9 @@ left:0;
 width:100%;
 margin-right: 0px;
 margin-left: 0px;
+position-left:0px;
 position: relative;
+
 
 
 }
